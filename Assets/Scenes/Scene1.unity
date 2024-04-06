@@ -871,8 +871,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1460370080}
-  manager: {fileID: 0}
-  player: {fileID: 0}
   sfxTakeOff: {fileID: 8300000, guid: 523ebf68884d98049942c0866eb29b2c, type: 3}
 --- !u!1 &585566947
 GameObject:

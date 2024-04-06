@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        
         lives = PlayerPrefs.GetInt("Lives", LIVES);
         sceneId = SceneManager.GetActiveScene().buildIndex;
         OnGUI();
