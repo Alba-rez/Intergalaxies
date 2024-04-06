@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class TakeOff : MonoBehaviour
 {
@@ -37,7 +34,7 @@ public class TakeOff : MonoBehaviour
 
     void NextLevel()
     {
-        int nextId = SceneManager.GetActiveScene().buildIndex+1;
+        int nextId = SceneManager.GetActiveScene().buildIndex + 1;
         if (nextId < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(nextId);

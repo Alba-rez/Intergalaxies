@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -91,8 +91,8 @@ public class GameManager : MonoBehaviour
         return score;
     }
 
-        
-    
+
+
     public int getLives()
     {
         return lives;
@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
     {
         return gameover;
     }
-   
+
 
     public bool isGamePaused()
     {
@@ -168,7 +168,7 @@ public class GameManager : MonoBehaviour
                 imgLivesRefs[i].enabled = i < lives;
         }
 
-      
+
 
     }
 
@@ -215,3 +215,4 @@ public class GameManager : MonoBehaviour
 
     }
 }
+
