@@ -108,6 +108,8 @@ public class GameManager : MonoBehaviour
         return paused;
     }
 
+
+    // falta implementar condición Trigger pérdida de vidas para usar este método
     void LoseLive()
     {
         lives--;
