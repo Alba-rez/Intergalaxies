@@ -55,6 +55,22 @@ public class GameManager : MonoBehaviour
 
     }
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        txtScore = GameObject.Find("Score").GetComponent<Text>();
+        txtMessage = GameObject.Find("Message").GetComponent<Text>();
+        OnGUI();
+    }
 
     void Start()
     {
