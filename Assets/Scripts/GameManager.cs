@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     const int LIVES = 3;
     int lives = LIVES;
 
-    int score;
+    private int score;
     int sceneId;
     bool gameover;
     bool paused = false;
@@ -90,6 +90,9 @@ public class GameManager : MonoBehaviour
     {
         return score;
     }
+
+        
+    
     public int getLives()
     {
         return lives;

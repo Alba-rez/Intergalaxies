@@ -6,49 +6,46 @@ using UnityEngine.UI;
 
 public class TakeOff : MonoBehaviour
 {
-    
     [SerializeField] Animator anim;
-    [SerializeField] GameManager manager;
-    [SerializeField] GameObject player;
     [SerializeField] AudioClip sfxTakeOff;
-    //int delay = 3;
-    int sceneId;
+    GameManager manager;
+    GameObject player;
 
-
-    private void Start()
+    void Awake()
     {
-        sceneId = SceneManager.GetActiveScene().buildIndex;
+        // Recuperar la referencia al GameManager
+        manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        // Recuperar referencia al jugador
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-
     {
-        if (other.gameObject.tag == "Player" )
+        if (other.gameObject.CompareTag("Player") && manager != null)
         {
-          
-            // Comprobar si el jugador ha atravesado la nave y si los puntos son 500
+            // Comprobar si el jugador ha atravesado la nave y si los puntos son suficientes
             if (manager.getScore() >= 50)
             {
                 anim.SetTrigger("takeOff");
                 player.SetActive(false);
                 AudioSource.PlayClipAtPoint(sfxTakeOff, Camera.main.transform.position);
-                Invoke("NextLevel",2);
+                Invoke("NextLevel", 2);
             }
         }
-
     }
+
     void NextLevel()
     {
-        int nextId = sceneId + 1;
-        //yield return new WaitForSeconds(delay);
-        
-        if (sceneId==2) 
+        int nextId = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextId < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(nextId);
         }
         else
         {
-            SceneManager.LoadScene(nextId);
+            // Si es la última escena, cargar la primera
+            SceneManager.LoadScene(0);
         }
     }
 }

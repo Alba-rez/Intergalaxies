@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 357930154}
-  manager: {fileID: 1447969178}
+  manager: {fileID: 0}
   player: {fileID: 629381295}
   sfxTakeOff: {fileID: 8300000, guid: 523ebf68884d98049942c0866eb29b2c, type: 3}
 --- !u!1 &425413181
