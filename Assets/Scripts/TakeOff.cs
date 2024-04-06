@@ -37,7 +37,7 @@ public class TakeOff : MonoBehaviour
 
     void NextLevel()
     {
-        int nextId = SceneManager.GetActiveScene().buildIndex + 1;
+        int nextId = SceneManager.GetActiveScene().buildIndex+1;
         if (nextId < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(nextId);
