@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrapsController : MonoBehaviour
 {
     [SerializeField] AudioClip clip;
-    GameManager Score;
+    //GameManager Score;
 
     void restPoints()
     {
