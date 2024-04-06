@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
     {
         txtScore = GameObject.Find("Score").GetComponent<Text>();
         txtMessage = GameObject.Find("Message").GetComponent<Text>();
+        score = 0; // Aquí reinicio el score a 0
         OnGUI();
     }
 
