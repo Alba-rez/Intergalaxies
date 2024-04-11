@@ -23,7 +23,6 @@
 > 6.  ### **Controles**:
 > *	Movimiento: Flechas direccionales o teclas WASD.
 > *	Salto: Barra espaciadora.
-> *	Interacción: Tecla de acción (por ejemplo, "E" o clic del ratón).
 > 7. ### **Progresión del Juego**:
 > *	El jugador avanza a través de los diferentes planetas recolectando puntos de combustible y superando obstáculos.
 > *	Una vez que se acumulan al menos 500 puntos de combustible, la nave de Astro despegará y el jugador avanzará a la siguiente fase del juego.
@@ -33,4 +32,4 @@
 > 9. ### **Vidas**:
 > 	* El jugador comienza con tres vidas.
 > 	* Pierde una vida si es alcanzado por dos rayos láser de los robots averiados.
-> 	* Si pierde todas las vidas, la partida se reinicia desde cero.
+> 	* Si pierde todas las vidas, la partida se reinicia desde cero manteniéndose en la misma fase.
