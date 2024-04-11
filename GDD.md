@@ -15,7 +15,7 @@
 >
 > ## Concepto
 >
-> Intergalaxies es un juego de plataformas ambientado en el espacio donde el jugador controla a una astronauta llamada Astro, quien debe > llegar al planeta Tierra consiguiendo combustible en antiguos puertos especiales situados en planetas de la galaxia. El juego se enfoca > en la exploración, la recolección de recursos y la superación de obstáculos.
+> Intergalaxies es un juego de plataformas ambientado en el espacio donde el jugador controla a una astronauta llamada Astro, quien debe llegar al planeta Tierra  consiguiendo combustible en antiguos puertos especiales situados en planetas de la galaxia. El juego se enfoca en la exploración, la recolección de recursos y la superación de obstáculos.
 >
 > ## Puntos Clave
 >
@@ -36,7 +36,7 @@
 > ## Experiencia de Juego
 >
 > Los jugadores experimentarán una emocionante aventura espacial mientras controlan a Astro, exploran planetas alienígenas, recolectan 
-> recursos, evitan trampas mortales y enfrentan desafíos únicos en cada nivel. La atmósfera del juego estará inmersa en una banda sonora > cautivadora y efectos de sonido que realzan la experiencia de juego.
+recursos, evitan trampas mortales y enfrentan desafíos únicos en cada nivel. La atmósfera del juego estará inmersa en una banda sonora cautivadora y efectos de sonido que realzan la experiencia de juego.
 >
 > ## DISEÑO
 >
@@ -51,15 +51,11 @@
 >
 > ### Núcleo de Juego
 >
->Intergalaxies se basa en mecánicas de plataformas clásicas con elementos de exploración y recolección. El jugador controla a Astro, 
-> quien puede caminar y saltar para navegar por los niveles. Debe recolectar combustible y otros recursos mientras evita trampas y 
-> enemigos.
+>Intergalaxies se basa en mecánicas de plataformas clásicas con elementos de exploración y recolección. El jugador controla a Astro, quien puede caminar y saltar para navegar por los niveles. Debe recolectar combustible y otros recursos mientras evita trampas y enemigos.
 >
 > ### Flujo de Juego
 >
-> El juego se desarrolla en niveles lineales, cada uno ubicado en un planeta diferente. El jugador debe explorar el nivel, recolectar 
-> recursos y alcanzar la nave espacial al final para avanzar al siguiente planeta. Si pierde todas sus vidas, la partida se reinicia 
-> desde el último punto de control.
+> El juego se desarrolla en niveles lineales, cada uno ubicado en un planeta diferente. El jugador debe explorar el nivel, recolectar recursos y alcanzar la nave espacial al final para avanzar al siguiente planeta. Si pierde todas sus vidas, la partida se reinicia desde el último punto de control.
 >
 > ### Fin de Juego
 
@@ -80,8 +76,7 @@
 >
 > ### Descripción General
 >
-> El juego se desarrolla en un universo espacial lleno de planetas alienígenas, cada uno con su propia estética y desafíos. Los niveles 
-> están diseñados con una combinación de entornos naturales y estructuras artificiales.
+> El juego se desarrolla en un universo espacial lleno de planetas alienígenas, cada uno con su propia estética y desafíos. Los niveles están diseñados con una combinación de entornos naturales y estructuras artificiales.
 >
 > ### Personajes
 >
@@ -102,8 +97,7 @@
 >
 > ### HUD
 >
-> El HUD muestra el marcador de puntos en la esquina superior derecha y las vidas restantes en la esquina superior izquierda. También 
-> incluye indicadores visuales de combustible y otros recursos importantes.
+> El HUD muestra el marcador de puntos en la esquina superior derecha y las vidas restantes en la esquina superior izquierda. También incluye indicadores visuales de combustible.
 > 
 > ### ARTE
 >
@@ -119,8 +113,7 @@
 >
 > ### Metas de Audio
 >
-> Proporcionar una experiencia auditiva envolvente que complemente la acción del juego y mejore la inmersión del jugador en el universo 
-> espacial.
+> Proporcionar una experiencia auditiva envolvente que complemente la acción del juego y mejore la inmersión del jugador en el universo espacial.
 >
 > ### Assets de Audio
 >
@@ -137,3 +130,5 @@
 > * Motor del juego: Unity.
 > * Arte: Adobe Photoshop, Aseprite.
 > * Música y sonido: FL Studio, Audacity.
+>
+>   
