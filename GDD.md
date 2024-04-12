@@ -9,7 +9,7 @@
 >
 >| Versión      | Fecha        | Comentarios  |
 >|--------------|--------------|--------------|
->| 1.0          |              |              |
+>| 1.0          |              |  Documento   |
 >|              |              |              |
 > 
 > ## RESUMEN
@@ -68,10 +68,6 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > El juego se desarrolla en niveles lineales, cada uno ubicado en un planeta diferente. El jugador debe explorar el nivel, recolectar recursos y alcanzar la nave espacial al final para avanzar al siguiente planeta. Si pierde todas sus vidas, la partida se reinicia desde cero en la misma fase.
 >
->  * ### Pantalla inicio:
->  ![pantalla inicio](Imágenes/Captura-de-pantalla-2024-04-12-140613.png)
->  <img src="Imágenes/Captura de pantalla 2024 04 12 140613.png"/>
->
 > ### Fin de Juego
 >
 > * Derrotas: Perder todas las vidas.
@@ -97,22 +93,119 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > ### Personajes
 >
 > * Jugables: Astro, una astronauta vestida con un traje naranja.
-> * Secundarios: Robots averiados.
-> * Enemigos: Robots hostiles.
+>   
+>  <img src="Imágenes/Captura de pantalla 2024-04-12 141251.png"/>
+>
+> 
+> * Enemigos: Robots hostiles:
+>   
+> Los robots del planeta árido fueron bautizados por los colonos como Tars y Case
+>
+>  <img src="Imágenes/Captura de pantalla 2024-04-12 141355.png"/>
+>
+> 
+> Los robots del planeta frondoso como Abbot y Costello
+>
+>  <img src="Imágenes/Captura de pantalla 2024-04-12 141031.png"/>
+>
+> 
 > ### Objetos
 >
 > * Cajas: Contienen puntos que son el combustible para la nave.
 > * Diamantes: Contienen más puntos que son el conbustible para la nave.
+> * Nave: Despegará siempre que Atro acceda a ella con al menos 500 puntos de combustible.
 >
+> <img src="Imágenes/Captura de pantalla 2024-04-12 141212.png"/>
+>
+> Situada en la parte derecha del terreno de juego:
+>
+> <img src="Imágenes/Captura de pantalla 2024-04-12 140736.png"/>
+>
+> <img src="Imágenes/Captura de pantalla 2024-04-12 140952.png"/>
+>
+> 
+> * Trampas : Restan puntos si Astro las toca.
+>   En el planeta árido son picas situadas en puntos estratégicos de paso o debajo de plataformas y consumen energía al tocarlas
+>
+> <img src="Imágenes/Captura de pantalla 2024-04-12 141329.png"/>
+>
+>  En el planeta frondoso las trampas son la propia vegetación, que debido a la radiación consumen energía: 
+>
+> <img src="Imágenes/Captura de pantalla 2024-04-12 141103.png"/>
+>
+> <img src="Imágenes/Captura de pantalla 2024-04-12 141139.png"/>
+>
+> 
 > ## INTERFAZ
 >
 > ### Flujo de Pantallas
 >
 > El juego cuenta con pantallas de inicio y 2 escenas que corresponden con cada fase.
+> 
+> 0. ### Pantalla inicio:
+>   
+>  <img src="Imágenes/Captura de pantalla 2024-04-12 140613.png"/>
 >
-> ### HUD
+> 
+> * Fondo: Una pantalla apaisada con un fondo estelar en movimiento descendente, creando la sensación de desplazamiento. Tres planetas se destacan sobre este fondo: el más cercano es un planeta árido, seguido por uno frondoso, y en la distancia, la Tierra.
 >
-> El HUD muestra el marcador de puntos en la esquina superior derecha y las vidas restantes en la esquina superior izquierda. 
+> * Nave: Una nave emerge desde la parte inferior de la pantalla, moviéndose hacia el centro y deteniéndose. La música de fondo, reminiscente de máquinas averiadas, acompaña el movimiento, mientras un sonido de typing resuena junto con la aparición de caracteres en la pantalla que narran el mensaje: "Astro necesita volver a casa, pero antes debe obtener combustible para su nave. Para ello, tendrá que detenerse en dos planetas extraños, antiguos puertos espaciales de los humanos".
+>
+> * Mensaje en pantalla: Después de 1.5 segundos, el mensaje desaparece y en letras grandes aparece: "PRESS KEY TO START" y "PRESS ESC TO QUIT".
+>
+> * Transición: Al presionar cualquier tecla, el mensaje desaparece y, después de 2 segundos, la escena avanza a la siguiente.
+>
+> 
+>  1. ### Fase 1 - Planeta árido:
+>      
+>      <img src="Imágenes/Captura de pantalla 2024-04-12 140852.png"/>
+>
+> * Ambiente: Un paisaje desértico con montañas de arena picudas en el fondo.
+>
+> * Puerto Espacial: El puerto cuenta con un almacén subterráneo metálico. Astro debe descender varios niveles a través de plataformas flotantes y fijas.
+>
+> * Objetivo: Astro debe acumular puntos encontrando cajas metalizadas y diamantes dispersos por el almacén.
+>
+> * Cajas y Diamantes: Las cajas simulan una explosión de polvo al ser tocadas por Astro, otorgando 50 puntos, mientras que los diamantes otorgan 60 puntos sin explosión. Ambos aparecen aleatoriamente en localizaciones fijas.
+>   
+> * Trampas: Picas en el suelo y en el techo causan la pérdida de puntos si Astro las activa. La pérdida de puntos produce un sonido.
+>
+> * Robots Averiados: Dos robots defectuosos ( Tars y Case) se mueven de manera errática, disparando rayos de plasma con diferentes velocidades y patrones. Ser alcanzado por dos rayos cuesta una vida.
+> 
+> * Vidas: Representadas por tres figuras de Astro en la parte superior izquierda. La pérdida de vida genera un sonido.
+>
+> * Despegue: Astro debe acumular al menos 500 puntos para activar el despegue de la nave. Al tocar la nave, esta despega activándose el sonido propulsión y el rastro del fuego de las toberas de propulsión del cohete.
+> 
+> * Transición: La nave despega y desaparece de la escena, pasando a la escena 2 dos segundos después.
+>
+>  
+> 2. ### Fase 2 - Planeta frondoso:
+>       
+>      <img src="Imágenes/Captura de pantalla 2024-04-12 140919.png"/>
+>
+> * Ambiente: Un entorno selvático con una vegetación única que se alimenta de energía, distinta a la de la Tierra. Astro se encuentra en la parte superior del terreno, con árboles de troncos visibles en el fondo.
+>
+> * Puerto Espacial: La nave está ubicada en la parte derecha del mapa, accesible desde plataformas flotantes.
+>
+> * Sistema de Cuevas: En la parte inferior de la pantalla, hay un complejo sistema de cuevas. Astro debe descender por pozos estrechso con plataformas escalonadas. La vegetación dentro de las cuevas es peligrosa: tocarla resta puntos del Score.
+>
+> * Objetivo: El jugador debe recolectar cajas dispersas en tres localizaciones dentro de las cuevas. Cada caja otorga 50 puntos. También diamantes dentro y fuera de las cuevas que aportan 60 puntos.
+>
+> * Trampas: La vegetación peligrosa y los láseres de los robots pueden restar puntos o vidas al jugador si son activados.
+>
+> * Robots Averiados: Dos robots defectuosos ( Abbott y Costello ) disparan rayos láser continuamente, moviéndose de manera errática. Ser alcanzado por dos rayos resta una vida.
+>
+> * Pérdida de Puntos y Vidas: Se generan sonidos específicos para indicar la pérdida de puntos o vidas. Si el jugador pierde todas las vidas, la partida se reinicia.
+>
+> * Despegue de la Nave: La nave despega con sonido de explosión y fuego en las toberas de propulsión cuando el Score alcanza los 500 puntos y Astro toca la nave. 
+> 
+> * Transición: Si la nave despega, después de 2 segundos se carga la pantalla de la escena 0.
+>    
+>  ### HUD
+>
+> El HUD muestra el marcador de puntos en la esquina superior derecha y las vidas restantes en la esquina superior izquierda.
+>
+>  <img src="Imágenes/Captura de pantalla 2024-04-12 140736.png"/> 
 > 
 > ### ARTE
 >
