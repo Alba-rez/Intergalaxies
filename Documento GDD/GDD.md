@@ -9,7 +9,7 @@
 >
 >| Versión      | Fecha        | Comentarios  |
 >|--------------|--------------|--------------|
->| 1.0          |              |  Documento   |
+>| 1.0          | 01/05/2024   |  Documento   |
 >|              |              |              |
 > 
 > ## RESUMEN
