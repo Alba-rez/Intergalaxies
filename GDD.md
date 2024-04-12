@@ -11,7 +11,7 @@
 >|--------------|--------------|--------------|
 >| 1.0          |              |              |
 >|              |              |              |
->
+> 
 > ## RESUMEN
 > 
 > En un viaje audaz más allá de los confines conocidos, una intrépida astronauta ha desafiado los límites del cosmos, sin percatarse de que el combustible necesario para su retorno a la Tierra, su hogar, se ha agotado. Su espíritu explorador la ha llevado hasta los rincones más remotos de la galaxia, siguiendo meticulosos cálculos científicos concebidos durante la era de la colonización interestelar.
@@ -67,6 +67,10 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > ### Flujo de Juego
 >
 > El juego se desarrolla en niveles lineales, cada uno ubicado en un planeta diferente. El jugador debe explorar el nivel, recolectar recursos y alcanzar la nave espacial al final para avanzar al siguiente planeta. Si pierde todas sus vidas, la partida se reinicia desde cero en la misma fase.
+>
+>  * ### Pantalla inicio:
+>  ![pantalla inicio](Imágenes/Captura-de-pantalla-2024-04-12-140613.png)
+>  <img src="Imágenes/Captura de pantalla 2024 04 12 140613.png"/>
 >
 > ### Fin de Juego
 >
