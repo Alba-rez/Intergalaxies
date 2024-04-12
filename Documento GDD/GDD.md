@@ -119,7 +119,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > Situada en la parte derecha del terreno de juego:
 >
-> <img src="Imágenes/Captura de pantalla 2024-04-12 140736.png"/>
+> <img src="Imágenes/Captura de pantalla 2024-04-12 164202.png"/>
 >
 > <img src="Imágenes/Captura de pantalla 2024-04-12 140952.png"/>
 >
