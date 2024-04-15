@@ -75,7 +75,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
         lives = PlayerPrefs.GetInt("Lives", LIVES);
         sceneId = SceneManager.GetActiveScene().buildIndex;
         OnGUI();
@@ -110,7 +109,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-
     public int getLives()
     {
         return lives;
@@ -127,8 +125,8 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // falta implementar condición Trigger pérdida de vidas para usar este método
-    void LoseLive()
+    
+    public void LoseLive()
     {
         lives--;
         if (lives == 0)
@@ -209,12 +207,18 @@ public class GameManager : MonoBehaviour
                     PauseGame();
                 }
             }
-
-
-
         }
         if (gameover && Input.GetKeyUp(KeyCode.Return))
+        {
+            gameover = false;
             SceneManager.LoadScene(sceneId); // tiene que cargar la misma escena en la que está
+            
+            
+        }
+           
+           
+        
+           
     }
     void PauseGame()
     {

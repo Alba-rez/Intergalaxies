@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float jumpSpeed;
+   
     Rigidbody2D rb;
     Collider2D col;
     Animator anim;
@@ -76,13 +77,7 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("isJumping");
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-       
-
-    }
-
-
+   
 
 }
 

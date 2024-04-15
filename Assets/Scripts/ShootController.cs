@@ -8,8 +8,12 @@ public class ShootController : MonoBehaviour
     
     [SerializeField] float speed;
     [SerializeField] float temp;
-   
+    GameManager gmanager;
 
+    void Start()
+    {
+        gmanager = GameManager.GetInstance();
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,9 +30,20 @@ public class ShootController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // destruimos el disparo
         Destroy(gameObject);
 
+        if (other.gameObject.tag == "Player") 
+        {
+            gmanager.LoseLive();
+            //Debug.Log("auchh");
+            
+        }
+        
+        
+
     }
-   
-}
+
+
+    }
+
+

@@ -33,7 +33,7 @@ public class RobotController : MonoBehaviour
     }
     IEnumerator Shoot()
     {
-        Debug.Log("Corrutina de disparo iniciada"); 
+         
         while (true)
         {
             yield return new WaitForSeconds(shootDelay); // Esperar un tiempo determinado antes de continuar con la corutina
@@ -45,7 +45,7 @@ public class RobotController : MonoBehaviour
                 Instantiate(shoot, transform.position, Quaternion.identity);
                 AudioSource.PlayClipAtPoint(sfxShoot, Camera.main.transform.position);
 
-                Debug.Log("Corrutina de disparo en proceso"); 
+                
             }
         }
     }
