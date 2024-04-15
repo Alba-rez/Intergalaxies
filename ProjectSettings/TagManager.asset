@@ -19,6 +19,7 @@ TagManager:
   - Score
   - Message
   - Lives
+  - Walls
   layers:
   - Default
   - TransparentFX
