@@ -1,7 +1,6 @@
  ## Resumen del Juego:
-> "Intergalaxies" es un juego de plataformas ambientado en el espacio donde el jugador controla a Astro, > una intrépida exploradora espacial. El objetivo del juego es ayudar a Astro a recopilar suficiente 
-> combustible para su nave espacial explorando diferentes planetas y evitando trampas y peligros en el 
-> camino.
+> "Intergalaxies" es un juego de plataformas ambientado en el espacio donde el jugador controla a Astro, una intrépida exploradora espacial. El objetivo del juego es ayudar a Astro a recopilar suficiente combustible para su nave espacial explorando diferentes planetas y evitando trampas y peligros en el camino.
+> 
 > ## Mecánicas del Juego:
 > 1.	### **Recopilación de Combustible**:
 > * El jugador debe recolectar puntos de combustible dispersos por la escena.
@@ -12,12 +11,12 @@
 > *	Si Astro cae en una trampa, perderá 50 puntos de combustible si tiene 50 o más puntos acumulados. Por debajo de este límite, no se restarán puntos.
 > 3.	### **Enemigos**:
 > *	Los robots averiados patrullan ciertas áreas y disparan rayos láser hacia Astro.
-> *	Si Astro es alcanzada por dos rayos láser, perderá una vida.
+> *	Si Astro es alcanzada por 1 rayo láser, perderá una vida.
 > 4.	### **Nave Espacial**:
-> *	La nave espacial de Astro se encuentra en la escena y actúa como punto de referencia y objetivo final del juego.
+> *	La nave espacial de Astro se encuentra en la escena y actúa como objetivo final del juego.
 > *	La nave despegará una vez que el jugador acumule al menos 500 puntos de combustible.
 > 5.	### **Niveles y Escenas**:
-> *	Escena de Inicio: Presenta tres planetas y una narrativa introductoria con sonidos de fondo de máquinas y typing. La nave aparece en la escena desde la parte inferior y se mueve hasta quedar en el centro de la pantalla, mientras que el fondo de la escena se mueve simulando movimiento.
+> *	Escena de Inicio: Presenta tres planetas y una narrativa introductoria con sonidos de fondo de máquinas y typing. 
 > *	Planeta Árido (Escena 1): Trampas de picas, robots disparando rayos láser, y elementos áridos en el diseño del nivel.
 > *	Planeta Frondoso (Escena 2): Trampas de flores venenosas, robots patrullando, y un entorno exuberante con cuevas y vegetación densa.
 > 6.  ### **Controles**:
@@ -31,5 +30,5 @@
 >   * Las trampas y los obstáculos restan puntos al jugador según la mecánica especificada.
 > 9. ### **Vidas**:
 > 	* El jugador comienza con tres vidas.
-> 	* Pierde una vida si es alcanzado por dos rayos láser de los robots averiados.
+> 	* Pierde una vida si es alcanzado por 1 rayo láser de los robots averiados.
 > 	* Si pierde todas las vidas, la partida se reinicia desde cero manteniéndose en la misma fase.
