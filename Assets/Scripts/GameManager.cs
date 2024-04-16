@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,9 +8,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    //lo que haya dentro del Game Manager tendrán que ser variables
-    //y métodos estáticos para que pervivan cuando se destruya una escena y se genere una nueva
-
     public static GameManager instance;
     [SerializeField] Text txtScore;
     [SerializeField] Text txtMessage;
@@ -52,7 +50,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-
+       
     }
 
     void OnEnable()
@@ -70,14 +68,40 @@ public class GameManager : MonoBehaviour
         txtScore = GameObject.Find("Score").GetComponent<Text>();
         txtMessage = GameObject.Find("Message").GetComponent<Text>();
         score = 0; // Aquí reinicio el score a 0
+
+        if (scene.buildIndex == 1)
+        {
+            lives = LIVES;
+            // Guardar el nuevo valor de vidas en PlayerPrefs
+            for (int i = 0; i < LIVES; i++)
+            {
+                string lifeName = "Life" + (i + 1);
+                PlayerPrefs.SetInt(lifeName, lives);
+            }
+        }
+        imgLivesRefs = new Image[LIVES]; // Usa LIVES como la longitud del array
+            for (int i = 0; i < LIVES; i++)
+            {
+                string lifeName = "Life" + (i + 1); // Genera el nombre de la vida
+                GameObject lifeObject = GameObject.Find(lifeName); // Busca el GameObject con ese nombre
+                if (lifeObject != null)
+                {
+                    imgLivesRefs[i] = lifeObject.GetComponent<Image>(); // Obtiene el componente Image
+                }
+            }
+        
+        
         OnGUI();
     }
 
     void Start()
     {
-        lives = PlayerPrefs.GetInt("Lives", LIVES);
         sceneId = SceneManager.GetActiveScene().buildIndex;
-        OnGUI();
+        for (int i = 0; i < LIVES; i++)
+        {
+            string lifeName = "Life" + (i + 1);
+            lives = PlayerPrefs.GetInt(lifeName, LIVES);
+        }
     }
 
     public void AddScore(string tag)
@@ -109,6 +133,7 @@ public class GameManager : MonoBehaviour
     }
 
 
+
     public int getLives()
     {
         return lives;
@@ -125,7 +150,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    
+    // falta implementar condición Trigger pérdida de vidas para usar este método
     public void LoseLive()
     {
         lives--;
@@ -135,8 +160,13 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            PlayerPrefs.SetInt("Lives", lives); // Guardar las vidas restantes en PlayerPrefs
+            for (int i = 0; i < LIVES; i++)
+            {
+                string lifeName = "Life" + (i + 1);
+                PlayerPrefs.SetInt(lifeName, lives); // Guardar las vidas restantes en PlayerPrefs           
+            }
             PlayerPrefs.Save();
+
             OnGUI();
         }
     }
@@ -147,6 +177,17 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         AudioSource.PlayClipAtPoint(sfxGameOver, new Vector3(0, 0, -10), 1);
         txtMessage.text = "GAME OVER \n PRESS <RET> TO START";
+
+        // Reiniciar el número de vidas a 3
+        lives = LIVES;
+        txtMessage.text = "";
+
+        // Guardar el nuevo valor de vidas en PlayerPrefs
+        for (int i = 0; i < LIVES; i++)
+        {
+            string lifeName = "Life" + (i + 1);
+            PlayerPrefs.SetInt(lifeName, lives);
+        }
     }
 
 
@@ -207,18 +248,12 @@ public class GameManager : MonoBehaviour
                     PauseGame();
                 }
             }
+
+
+
         }
         if (gameover && Input.GetKeyUp(KeyCode.Return))
-        {
-            gameover = false;
             SceneManager.LoadScene(sceneId); // tiene que cargar la misma escena en la que está
-            
-            
-        }
-           
-           
-        
-           
     }
     void PauseGame()
     {
