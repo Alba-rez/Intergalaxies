@@ -9,7 +9,7 @@
 >
 >| Versión      | Fecha        | Comentarios  |
 >|--------------|--------------|--------------|
->| 1.0          | 01/05/2024   |  Documento   |
+>| 1.0          | 18/05/2024   |  Documento   |
 >|              |              |              |
 > 
 > ## RESUMEN
@@ -72,11 +72,10 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Derrotas: Perder todas las vidas.
 > * Victoria: Alcanzar la nave espacial con suficiente combustible.
-> * Otras situaciones: Reiniciar la partida desde cero si se pierden todas las vidas.
 >
 > ### Física de Juego
 >
-> La física del juego se aplica a los movimientos de Astro, la gravedad en los planetas y las interacciones con objetos y enemigos.
+> La física del juego se aplica a los movimientos de Astro, la gravedad en los planetas y las interacciones con objetos y con los rayos de los enemigos.
 > 
 > ### Controles
 > 
@@ -84,7 +83,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > * Barra espaciadora: Saltar.
 > * Tecla "P": Pausar el juego.
 > * Tecla "ESC": Salir del juego.
-> * Tecla "RET": Reinicia el juego desde cero en la misma fase si el jugador pierde todas las vidas
+> * Tecla "RET": Reinicia el juego desde cero en la misma fase.
 >
 > ## MUNDO DEL JUEGO
 >
@@ -174,7 +173,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Robots Averiados: Dos robots defectuosos ( Tars y Case) se mueven de manera errática, disparando rayos de plasma con diferentes velocidades y patrones. Ser alcanzado por 1 rayo cuesta una vida.
 > 
-> * Vidas: Representadas por tres figuras de Astro en la parte superior izquierda. La pérdida de vida genera un sonido.
+> * Vidas: Representadas por tres figuras de Astro en la parte superior izquierda. La pérdida de vida genera un sonido, aparece el mensaje de GameOver y Astro desaparece de la escena.
 >
 > * Despegue: Astro debe acumular al menos 500 puntos para activar el despegue de la nave. Al tocar la nave, ésta despega activándose el sonido propulsión y el rastro del fuego de las toberas de propulsión del cohete. Astro desaparece ( como si entrerar en la nave)
 > 
@@ -197,7 +196,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Robots Averiados: Dos robots defectuosos ( Abbott y Costello ) disparan rayos láser continuamente, moviéndose de manera errática. Ser alcanzado por 1 rayo resta una vida.
 >
-> * Pérdida de Puntos y Vidas: Se generan sonidos específicos para indicar la pérdida de puntos o vidas. Si el jugador pierde todas las vidas, la partida se reiniciaría si el jugador pulsa lecla "RET".
+> * Pérdida de Puntos y Vidas: Se generan sonidos específicos para indicar la pérdida de puntos o vidas. Si el jugador pierde todas las vidas,sale en pantalla el mensaje dde "Game Over", Astro desaparece y la partida se reiniciaría si el jugador pulsa tecla "RET".
 >
 > * Despegue de la Nave: La nave despega con sonido de explosión y fuego en las toberas de propulsión cuando el Score alcanza los 500 puntos y Astro toca la nave. 
 > 
@@ -217,7 +216,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > 
 > ### Assets de Arte
 > 
-> * Imágenes: Sprites de personajes, fondos de niveles, objetos y efectos visuales.
+> * Imágenes: Sprites de personajes, fondos de niveles, objetos y efectos visuales como la explosión de polvo en las cajas de la escena 1 y la explosión de luz en la escena 2.
 > * Animaciones: Movimientos de personajes, depegue de nave, movimiento de los robots, explosiones de las cajas con puntos, movimiento flotante de los diamantes y de los planetas en la escena inicial y otros efectos.
 > ## AUDIO
 >
@@ -228,7 +227,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > ### Assets de Audio
 >
 > * Música: Banda sonora atmosférica.
-> * Sonidos: Recolección de objetos, explosiones y disparos, sonido istriónico de máquina averiada en la pantalla incial, con sonido de teclado al escribirse en pantalla la misión de Astro.Sonido para la pérdida de puntos y despegue de la nave.
+> * Sonidos: Recolección de objetos, explosiones y disparos, sonido istriónico de máquina averiada en la pantalla incial, con sonido de teclado al escribirse en pantalla la misión de Astro.Sonido para la pérdida de puntos, périda de vidas, y despegue de la nave.
 >   
 > ## DETALLES TÉCNICOS
 >
