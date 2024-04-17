@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
         txtScore = GameObject.Find("Score").GetComponent<Text>();
         txtMessage = GameObject.Find("Message").GetComponent<Text>();
         score = 0; // Aquí reinicio el score a 0
+        gameover = false;
 
         if (scene.buildIndex == 1)
         {
@@ -80,7 +81,8 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt(lifeName, lives);
             }
         }
-        imgLivesRefs = new Image[LIVES]; // Usa LIVES como la longitud del array
+        
+            imgLivesRefs = new Image[LIVES]; // Usa LIVES como la longitud del array
             for (int i = 0; i < LIVES; i++)
             {
                 string lifeName = "Life" + (i + 1); // Genera el nombre de la vida
@@ -90,8 +92,13 @@ public class GameManager : MonoBehaviour
                     imgLivesRefs[i] = lifeObject.GetComponent<Image>(); // Obtiene el componente Image
                 }
             }
-        
-        
+        if (scene.buildIndex != 0)
+        {
+            sceneId = scene.buildIndex;
+        }
+
+
+
         OnGUI();
     }
 
@@ -179,24 +186,13 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         AudioSource.PlayClipAtPoint(sfxGameOver, new Vector3(0, 0, -10), 1);
         txtMessage.text = "GAME OVER \n PRESS <RET> TO START";
-
-        // Reiniciar el número de vidas a 3
-        lives = LIVES;
-        txtMessage.text = "";
-
-        // Guardar el nuevo valor de vidas en PlayerPrefs
-        for (int i = 0; i < LIVES; i++)
-        {
-            string lifeName = "Life" + (i + 1);
-            PlayerPrefs.SetInt(lifeName, lives);
-        }
     }
 
 
 
     private void OnGUI()
     {
-        //txtScore.text = string.Format("{0,3:D3}", score);
+        
 
         if (txtScore != null)
             txtScore.text = string.Format("{0,3:D3}", score);
@@ -255,7 +251,20 @@ public class GameManager : MonoBehaviour
 
         }
         if (gameover && Input.GetKeyUp(KeyCode.Return))
+        {
+            // Reiniciar el número de vidas a 3     
+            lives = LIVES;
+            txtMessage.text = "";
+
+            // Guardar el nuevo valor de vidas en PlayerPrefs
+            for (int i = 0; i < LIVES; i++)
+            {
+                string lifeName = "Life" + (i + 1);
+                PlayerPrefs.SetInt(lifeName, lives);
+            }
             SceneManager.LoadScene(sceneId); // tiene que cargar la misma escena en la que está
+        }
+            
     }
     void PauseGame()
     {
