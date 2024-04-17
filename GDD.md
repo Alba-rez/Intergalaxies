@@ -81,6 +81,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > 
 > * Movimiento: Flechas direccionales o teclas WASD.
 > * Barra espaciadora: Saltar.
+> * Combinando barra espaciador y teclas WASD (izq y der) el salto es más alto.Se sirve del collider de las plataformas para propulsarse más alto.
 > * Tecla "P": Pausar el juego.
 > * Tecla "ESC": Salir del juego.
 > * Tecla "RET": Reinicia el juego desde cero en la misma fase.
@@ -152,12 +153,16 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Nave: Una nave emerge desde la parte inferior de la pantalla, moviéndose hacia el centro y deteniéndose. La música de fondo, reminiscente de máquinas averiadas, acompaña el movimiento, mientras un sonido de typing resuena junto con la aparición de caracteres en la pantalla que narran el mensaje: "Astro necesita volver a casa, pero antes debe obtener combustible para su nave. Para ello, tendrá que detenerse en dos planetas extraños, antiguos puertos espaciales de los humanos".
 >
-> * Mensaje en pantalla: Después de 1.5 segundos, el mensaje desaparece y en letras grandes aparece: "PRESS KEY TO START" y  más pequeño "PRESS ESC TO QUIT".
+> * Mensaje en pantalla: Después de 1.5 segundos, el mensaje desaparece y en letras grandes aparece: "PRESS KEY TO START" y  más pequeño  "PRESS SPACE TO HOW TO PLAY" y "PRESS ESC TO QUIT".
 >
-> * Transición: Al presionar cualquier tecla ( excepto "esc"), el mensaje desaparece y, después de 2 segundos, la escena avanza a la siguiente pantalla donde se inicia el juego.
+> * Transición: Al presionar cualquier tecla ( excepto "esc" o "espace"), los mensajes desaparecen y, después de 2 segundos, la escena avanza a la siguiente pantalla donde se inicia el juego.
 >
 > 
->  1. ### Fase 1 - Planeta árido:
+> 1. ### Escena 1 - How to play
+>    
+>     
+> 
+>  2. ### Escena 2 - Planeta árido:
 >      
 >      <img src="Imágenes/Captura de pantalla 2024-04-12 140852.png"/>
 >
@@ -180,7 +185,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > * Transición: La nave despega y desaparece de la escena, pasando a la escena 2 dos segundos después.
 >
 >  
-> 2. ### Fase 2 - Planeta frondoso:
+> 3. ### Escena 3 - Planeta frondoso:
 >       
 >      <img src="Imágenes/Captura de pantalla 2024-04-12 140919.png"/>
 >
