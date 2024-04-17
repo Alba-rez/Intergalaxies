@@ -82,6 +82,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > 
 > * Movimiento: Flechas direccionales o teclas WASD.
 > * Barra espaciadora: Saltar.
+> * Tecla "P": Pausar el juego.
 > * Tecla "ESC": Salir del juego.
 >
 > ## MUNDO DEL JUEGO
@@ -170,7 +171,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >   
 > * Trampas: Picas en el suelo y en el techo causan la pérdida de puntos si Astro las activa. La pérdida de puntos produce un sonido.
 >
-> * Robots Averiados: Dos robots defectuosos ( Tars y Case) se mueven de manera errática, disparando rayos de plasma con diferentes velocidades y patrones. Ser alcanzado por dos rayos cuesta una vida.
+> * Robots Averiados: Dos robots defectuosos ( Tars y Case) se mueven de manera errática, disparando rayos de plasma con diferentes velocidades y patrones. Ser alcanzado por 1 rayo cuesta una vida.
 > 
 > * Vidas: Representadas por tres figuras de Astro en la parte superior izquierda. La pérdida de vida genera un sonido.
 >
@@ -193,9 +194,9 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Trampas: La vegetación peligrosa y los láseres de los robots pueden restar puntos o vidas al jugador si son activados.
 >
-> * Robots Averiados: Dos robots defectuosos ( Abbott y Costello ) disparan rayos láser continuamente, moviéndose de manera errática. Ser alcanzado por dos rayos resta una vida.
+> * Robots Averiados: Dos robots defectuosos ( Abbott y Costello ) disparan rayos láser continuamente, moviéndose de manera errática. Ser alcanzado por 1 rayo resta una vida.
 >
-> * Pérdida de Puntos y Vidas: Se generan sonidos específicos para indicar la pérdida de puntos o vidas. Si el jugador pierde todas las vidas, la partida se reinicia.
+> * Pérdida de Puntos y Vidas: Se generan sonidos específicos para indicar la pérdida de puntos o vidas. Si el jugador pierde todas las vidas, la partida se reiniciaría si el jugador pulsa lecla "RET".
 >
 > * Despegue de la Nave: La nave despega con sonido de explosión y fuego en las toberas de propulsión cuando el Score alcanza los 500 puntos y Astro toca la nave. 
 > 
@@ -236,7 +237,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > ### Herramientas de Desarrollo
 >
 > * Motor del juego: Unity.
-> * Arte: Adobe Photoshop, Asset Store.
+> * Arte: Asset Store.
 > * Música y sonido: Asset Store.
 >
 >   
