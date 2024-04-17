@@ -160,9 +160,23 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > 
 > 1. ### Escena 1 - How to play
 >    
->     
+>        <img src="Imágenes/Escena1.png"/>
 > 
->  2. ### Escena 2 - Planeta árido:
+>
+>      * Fondo: Una pantalla apaisada con un fondo estelar en movimiento descendente, creando la sensación de desplazamiento. Tres planetas se destacan sobre este fondo: el más cercano es un planeta árido, seguido por uno frondoso, y en la distancia, la Tierra.
+>      * Icono de Astro donde se especifica qué hace y qué debe hacer en el juego :
+>      "She walks and jumps to climb platforms and must collect points to launch the spaceship ( where points reoresent fuel).The spaceship will only launch if Astro gathers 500 points or more"
+>      * Icono de Tars y Case (representando a todos los robots) donde se indica también qué hacen y que daño pueden causar:
+>        "They shoot in the same direction without stopping because they are damaged. If one of the shots hits Astro, she will loose one life. if she looses 3 lives, it´s game over".
+>      * Icono de una de las cajas contando qué contienen:
+>        "Boxes will randomly appear in the scene, each containing points".
+>      * Icono de las trampas, indicando qué daño harán :
+>      " If Astro touches traps, she will loose 50 points".
+>
+>       * En medio de la pantalla saldrá un mensaje que dice que si pulsas cualquier tecla empiezas a jugar, y al fondo de la pantalla el mensaje para salir del juego con la tecla "esc"
+>
+> 
+>  3. ### Escena 2 - Planeta árido:
 >      
 >      <img src="Imágenes/Captura de pantalla 2024-04-12 140852.png"/>
 >
