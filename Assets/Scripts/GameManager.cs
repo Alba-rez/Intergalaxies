@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text txtMessage;
     [SerializeField] Image[] imgLives;
     [SerializeField] AudioClip sfxGameOver;
+    GameObject player;
     
 
     const int SCORE_BOX = 50;
@@ -68,6 +69,7 @@ public class GameManager : MonoBehaviour
     {
         txtScore = GameObject.Find("Score").GetComponent<Text>();
         txtMessage = GameObject.Find("Message").GetComponent<Text>();
+        player = GameObject.FindGameObjectWithTag("Player");
         score = 0; // Aquí reinicio el score a 0
         gameover = false;
 
@@ -110,6 +112,8 @@ public class GameManager : MonoBehaviour
             string lifeName = "Life" + (i + 1);
             lives = PlayerPrefs.GetInt(lifeName, LIVES);
         }
+        // Recuperar referencia al jugador
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void AddScore(string tag)
@@ -186,6 +190,8 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         AudioSource.PlayClipAtPoint(sfxGameOver, new Vector3(0, 0, -10), 1);
         txtMessage.text = "GAME OVER \n PRESS <RET> TO START";
+        player.SetActive(false);
+        
     }
 
 
