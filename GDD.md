@@ -167,7 +167,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >      * Icono de Astro donde se especifica qué hace y qué debe hacer en el juego :
 >      "She walks and jumps to climb platforms and must collect points to launch the spaceship ( where points reoresent fuel).The spaceship will only launch if Astro gathers 500 points or more"
 >      * Icono de Tars y Case (representando a todos los robots) donde se indica también qué hacen y que daño pueden causar:
->        "They shoot in the same direction without stopping because they are damaged. If one of the shots hits Astro, she will loose one life. if she looses 3 lives, it´s game over".
+>        "They shoot in the same direction without stopping because they are damaged. If one of the shots hits Astro, she will lose one life. if she loses 3 lives, it´s game over".
 >      * Icono de una de las cajas contando qué contienen:
 >        "Boxes will randomly appear in the scene, each containing points".
 >      * Icono de las trampas, indicando qué daño harán :
