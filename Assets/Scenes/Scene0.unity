@@ -474,9 +474,9 @@ GameObject:
   m_Component:
   - component: {fileID: 378745934}
   - component: {fileID: 378745933}
-  - component: {fileID: 378745932}
   - component: {fileID: 378745936}
   - component: {fileID: 378745935}
+  - component: {fileID: 378745937}
   m_Layer: 0
   m_Name: SpaceShip
   m_TagString: Untagged
@@ -484,18 +484,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &378745932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378745931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f45059c57eaf5b4cb5bcd0d61a138e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &378745933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -627,6 +615,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &378745937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378745931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6a1a71fe6f6714fb9bc5163c4181e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 2
+  endPosition: {x: 0, y: -1, z: 0}
+  duration: 3
 --- !u!1 &442716729
 GameObject:
   m_ObjectHideFlags: 0

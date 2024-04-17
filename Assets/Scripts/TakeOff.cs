@@ -22,7 +22,7 @@ public class TakeOff : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && manager != null)
         {
             // Comprobar si el jugador ha atravesado la nave y si los puntos son suficientes
-            if (manager.getScore() >= 50)
+            if (manager.getScore() >= 500)
             {
                 anim.SetTrigger("takeOff");
                 player.SetActive(false);
