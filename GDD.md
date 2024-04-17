@@ -66,7 +66,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > ### Flujo de Juego
 >
-> El juego se desarrolla en niveles lineales, cada uno ubicado en un planeta diferente. El jugador debe explorar el nivel, recolectar recursos y alcanzar la nave espacial al final para avanzar al siguiente planeta. Si pierde todas sus vidas, la partida se reinicia desde cero en la misma fase.
+> El juego se desarrolla en niveles lineales, cada uno ubicado en un planeta diferente. El jugador debe explorar el nivel, recolectar recursos y alcanzar la nave espacial al final para avanzar al siguiente planeta. Si pierde todas sus vidas, la partida se reinicia desde cero y vuelve a la escena 2.
 >
 > ### Fin de Juego
 >
@@ -75,7 +75,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > ### Física de Juego
 >
-> La física del juego se aplica a los movimientos de Astro, la gravedad en los planetas y las interacciones con objetos y con los rayos de los enemigos.
+> La física del juego se aplica a los movimientos de Astro, la gravedad en los planetas, plataformas, nave espacial y las interacciones con objetos y con los rayos de los enemigos.
 > 
 > ### Controles
 > 
