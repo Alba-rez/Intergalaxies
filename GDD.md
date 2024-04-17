@@ -216,8 +216,8 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > 
 > ### Assets de Arte
 > 
-> * Imágenes: Sprites de personajes, fondos de niveles, objetos y efectos visuales como la explosión de polvo en las cajas de la escena 1 y la explosión de luz en la escena 2.
-> * Animaciones: Movimientos de personajes, depegue de nave, movimiento de los robots, explosiones de las cajas con puntos, movimiento flotante de los diamantes y de los planetas en la escena inicial y otros efectos.
+> * Imágenes: Sprites de personajes (astronauta y robots), fondos de niveles,sprites de cajas, nave espacial, planetas, 2 tileMaps para crear las cuevas de las escenas jugables
+> * Animaciones: Movimientos de personajes, depegue de nave, fuego de propulsión de la nave, movimiento de los robots, disparos de los robots, explosiones de las cajas, movimiento flotante de los diamantes, movimiento flotante de los planetas en la escena inicial, parallax en la escena 1 y 2, efecto movimiento del fondo estrellado en la escena 0.
 > ## AUDIO
 >
 > ### Metas de Audio
@@ -226,8 +226,8 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > ### Assets de Audio
 >
-> * Música: Banda sonora atmosférica.
-> * Sonidos: Recolección de objetos, explosiones y disparos, sonido istriónico de máquina averiada en la pantalla incial, con sonido de teclado al escribirse en pantalla la misión de Astro.Sonido para la pérdida de puntos, périda de vidas, y despegue de la nave.
+> * Música: Banda sonora atmosférica para la escena 1 y 2, sonido istriónico de máquina averiada en la pantalla incial, con sonido de teclado al escribirse en pantalla la misión de Astro
+> * Sonidos: Recolección de objetos, explosiones y disparos. Sonido para la pérdida de puntos (caída trampas), recogida de puntos, pérdida de vidas, y despegue de la nave, cambio de la pantalla de inicio a la escena 1 al presionar cualquier tecla excepto "esc" y Game Over
 >   
 > ## DETALLES TÉCNICOS
 >
@@ -238,7 +238,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > ### Herramientas de Desarrollo
 >
 > * Motor del juego: Unity.
-> * Arte: Asset Store.
+> * Arte: Asset Store, imágenes en internet
 > * Música y sonido: Asset Store.
 >
 >   
