@@ -160,7 +160,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > 
 > 1. ### Escena 1 - How to play
 >    
->        <img src="Imágenes/Escena1.png"/>
+>    <img src="Imágenes/Escena1.png"/>
 > 
 >
 >      * Fondo: Una pantalla apaisada con un fondo estelar en movimiento descendente, creando la sensación de desplazamiento. Tres planetas se destacan sobre este fondo: el más cercano es un planeta árido, seguido por uno frondoso, y en la distancia, la Tierra.
