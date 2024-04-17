@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
         score = 0; // Aquí reinicio el score a 0
         gameover = false;
 
-        if (scene.buildIndex == 1)
+        if (scene.buildIndex == 2)
         {
             lives = LIVES;
             // Guardar el nuevo valor de vidas en PlayerPrefs
@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
                     imgLivesRefs[i] = lifeObject.GetComponent<Image>(); // Obtiene el componente Image
                 }
             }
-        if (scene.buildIndex != 0)
+        if (scene.buildIndex != 0 || scene.buildIndex!=1)
         {
             sceneId = scene.buildIndex;
         }
@@ -268,7 +268,7 @@ public class GameManager : MonoBehaviour
                 string lifeName = "Life" + (i + 1);
                 PlayerPrefs.SetInt(lifeName, lives);
             }
-            SceneManager.LoadScene(sceneId); // tiene que cargar la misma escena en la que está
+            SceneManager.LoadScene(2); // tiene que cargar la escena 1 y volver a empezar
         }
             
     }
