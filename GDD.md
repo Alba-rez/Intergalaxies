@@ -32,7 +32,7 @@
 > * Recolección de combustible para avanzar.
 > * Superación de obstáculos y trampas en entornos hostiles.
 > * Sistema de puntuación basado en la recolección de objetos.
-> * Desafiantes enfrentamientos con robots averiados.
+> * Enfrentamientos con robots averiados.
 >   
 > ## Género
 >
@@ -53,7 +53,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > ### Metas de Diseño
 >
 > * Crear una experiencia de juego que transporte al jugador a un universo alienígena.
-> * Diseñar niveles desafiantes con una progresión adecuada de dificultad.
+> * Diseñar niveles desafiantes con una progresión de dificultad en cuanto al acceso a los recursos.
 > * Ofrecer mecánicas de juego intuitivas que mantengan el interés del jugador.
 > * Impulsar la exploración y el descubrimiento con planetas únicos y detallados.
 > * Integrar elementos de riesgo y recompensa para fomentar la estrategia y la toma de decisiones del jugador.
@@ -72,7 +72,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Derrotas: Perder todas las vidas.
 > * Victoria: Alcanzar la nave espacial con suficiente combustible.
-> * Otras situaciones: Reiniciar la partida desde cero.
+> * Otras situaciones: Reiniciar la partida desde cero si se pierden todas las vidas.
 >
 > ### Física de Juego
 >
@@ -84,6 +84,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > * Barra espaciadora: Saltar.
 > * Tecla "P": Pausar el juego.
 > * Tecla "ESC": Salir del juego.
+> * Tecla "RET": Reinicia el juego desde cero en la misma fase si el jugador pierde todas las vidas
 >
 > ## MUNDO DEL JUEGO
 >
@@ -114,7 +115,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Cajas: Contienen puntos que son el combustible para la nave.
 > * Diamantes: Contienen más puntos que son el conbustible para la nave.
-> * Nave: Despegará siempre que Atro acceda a ella con al menos 500 puntos de combustible.
+> * Nave: Despegará siempre que Astro acceda a ella con al menos 500 puntos de combustible.
 >
 > <img src="Imágenes/Captura de pantalla 2024-04-12 141212.png"/>
 >
@@ -125,7 +126,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > <img src="Imágenes/Captura de pantalla 2024-04-12 140952.png"/>
 >
 > 
-> * Trampas : Restan puntos si Astro las toca.
+> * Trampas : Restan puntos si Astro las toca.La pérdida de puntos produce un sonido
 >   En el planeta árido son picas situadas en puntos estratégicos de paso o debajo de plataformas y consumen energía al tocarlas
 >
 > <img src="Imágenes/Captura de pantalla 2024-04-12 141329.png"/>
@@ -152,9 +153,9 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Nave: Una nave emerge desde la parte inferior de la pantalla, moviéndose hacia el centro y deteniéndose. La música de fondo, reminiscente de máquinas averiadas, acompaña el movimiento, mientras un sonido de typing resuena junto con la aparición de caracteres en la pantalla que narran el mensaje: "Astro necesita volver a casa, pero antes debe obtener combustible para su nave. Para ello, tendrá que detenerse en dos planetas extraños, antiguos puertos espaciales de los humanos".
 >
-> * Mensaje en pantalla: Después de 1.5 segundos, el mensaje desaparece y en letras grandes aparece: "PRESS KEY TO START" y "PRESS ESC TO QUIT".
+> * Mensaje en pantalla: Después de 1.5 segundos, el mensaje desaparece y en letras grandes aparece: "PRESS KEY TO START" y  más pequeño "PRESS ESC TO QUIT".
 >
-> * Transición: Al presionar cualquier tecla, el mensaje desaparece y, después de 2 segundos, la escena avanza a la siguiente.
+> * Transición: Al presionar cualquier tecla ( excepto "esc"), el mensaje desaparece y, después de 2 segundos, la escena avanza a la siguiente pantalla donde se inicia el juego.
 >
 > 
 >  1. ### Fase 1 - Planeta árido:
@@ -167,7 +168,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Objetivo: Astro debe acumular puntos encontrando cajas metalizadas y diamantes dispersos por el almacén.
 >
-> * Cajas y Diamantes: Las cajas simulan una explosión de polvo al ser tocadas por Astro, otorgando 50 puntos, mientras que los diamantes otorgan 60 puntos sin explosión. Ambos aparecen aleatoriamente en localizaciones fijas.
+> * Cajas y Diamantes: Las cajas simulan una explosión de polvo en la escena 1 y una explosión de luz en la escena 2 al ser tocadas por Astro, otorgando 50 puntos, mientras que los diamantes otorgan 60 puntos sin explosión. Ambos aparecen aleatoriamente en localizaciones fijas.
 >   
 > * Trampas: Picas en el suelo y en el techo causan la pérdida de puntos si Astro las activa. La pérdida de puntos produce un sonido.
 >
@@ -175,7 +176,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > 
 > * Vidas: Representadas por tres figuras de Astro en la parte superior izquierda. La pérdida de vida genera un sonido.
 >
-> * Despegue: Astro debe acumular al menos 500 puntos para activar el despegue de la nave. Al tocar la nave, esta despega activándose el sonido propulsión y el rastro del fuego de las toberas de propulsión del cohete.
+> * Despegue: Astro debe acumular al menos 500 puntos para activar el despegue de la nave. Al tocar la nave, ésta despega activándose el sonido propulsión y el rastro del fuego de las toberas de propulsión del cohete. Astro desaparece ( como si entrerar en la nave)
 > 
 > * Transición: La nave despega y desaparece de la escena, pasando a la escena 2 dos segundos después.
 >
@@ -228,6 +229,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > * Música: Banda sonora atmosférica.
 > * Sonidos: Recolección de objetos, explosiones y disparos, sonido istriónico de máquina averiada en la pantalla incial, con sonido de teclado al escribirse en pantalla la misión de Astro.Sonido para la pérdida de puntos y despegue de la nave.
+>   
 > ## DETALLES TÉCNICOS
 >
 > ### Plataformas Objetivo
