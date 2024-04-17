@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   temp: 3
+  sfxLife: {fileID: 8300000, guid: 1713622cd2b3b4eb59001aa73d8b96e4, type: 3}
 --- !u!60 &-7637076026388240260
 PolygonCollider2D:
   m_ObjectHideFlags: 0

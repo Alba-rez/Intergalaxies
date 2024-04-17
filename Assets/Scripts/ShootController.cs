@@ -8,6 +8,7 @@ public class ShootController : MonoBehaviour
     
     [SerializeField] float speed;
     [SerializeField] float temp;
+    [SerializeField] AudioClip sfxLife;
     GameManager gmanager;
 
     void Start()
@@ -34,9 +35,10 @@ public class ShootController : MonoBehaviour
 
         if (other.gameObject.tag == "Player") 
         {
+            AudioSource.PlayClipAtPoint(sfxLife, gameObject.transform.position);
             gmanager.LoseLive();
-            //Debug.Log("auchh");
-            
+           
+
         }
         
 

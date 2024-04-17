@@ -574,8 +574,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4381545, y: 1.3386043}
-  m_Size: {x: 2.900101, y: 3.1406584}
+  m_Offset: {x: -0.4798996, y: 1.3386043}
+  m_Size: {x: 2.9835913, y: 3.1406584}
   m_Direction: 0
 --- !u!4 &404427378
 Transform:
@@ -2327,7 +2327,7 @@ MonoBehaviour:
   shootDelay: 3
   shootProb: 70
   sfxShoot: {fileID: 8300000, guid: 45129facdf9a45e4192b169f8958889e, type: 3}
-  speed: 3
+  speed: 1.5
 --- !u!50 &732888461
 Rigidbody2D:
   serializedVersion: 4
@@ -21089,10 +21089,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoot: {fileID: 3603202269793505066, guid: 52b993db25e62174293bcfa11deba92c, type: 3}
-  shootDelay: 5
-  shootProb: 25
+  shootDelay: 4
+  shootProb: 50
   sfxShoot: {fileID: 8300000, guid: 1ab0fdc0a98f42243b6934a55ebb3c4f, type: 3}
-  speed: 7
+  speed: 8
 --- !u!70 &1354544392
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

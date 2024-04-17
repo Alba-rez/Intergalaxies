@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text txtMessage;
     [SerializeField] Image[] imgLives;
     [SerializeField] AudioClip sfxGameOver;
+    
 
     const int SCORE_BOX = 50;
     const int REST_SCORE = -50;
@@ -154,6 +155,7 @@ public class GameManager : MonoBehaviour
     public void LoseLive()
     {
         lives--;
+        
         if (lives == 0)
         {
             GameOver();
