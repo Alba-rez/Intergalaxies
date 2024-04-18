@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Image[] imgLives;
     [SerializeField] AudioClip sfxGameOver;
     GameObject player;
+    GameObject spaceShip;
     
 
     const int SCORE_BOX = 50;
@@ -70,6 +71,7 @@ public class GameManager : MonoBehaviour
         txtScore = GameObject.Find("Score").GetComponent<Text>();
         txtMessage = GameObject.Find("Message").GetComponent<Text>();
         player = GameObject.FindGameObjectWithTag("Player");
+        spaceShip = GameObject.FindGameObjectWithTag("Ship");
         score = 0; // Aquí reinicio el score a 0
         gameover = false;
 
