@@ -68,6 +68,11 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (scene.buildIndex == 0)
+        {
+            // Destruir el GameManager cuando se carga la escena 0
+            Destroy(gameObject);
+        }
         txtScore = GameObject.Find("Score").GetComponent<Text>();
         txtMessage = GameObject.Find("Message").GetComponent<Text>();
         player = GameObject.FindGameObjectWithTag("Player");
