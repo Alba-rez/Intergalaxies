@@ -9,7 +9,7 @@
 >
 >| Versión      | Fecha        | Comentarios  |
 >|--------------|--------------|--------------|
->| 1.0          | 18/05/2024   |  Documento   |
+>| 1.0          | 23/05/2024   |  Documento   |
 >|              |              |              |
 > 
 > ## RESUMEN
@@ -99,14 +99,14 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >  <img src="Imágenes/Captura de pantalla 2024-04-12 141251.png"/>
 >
 > 
-> * Enemigos: Robots hostiles:
+> * Enemigos: Robots hostiles. Astro no interactúa con los robots ( ambos se traspasan).Solo colisiona con sus rayos láser:
 >   
-> Los robots del planeta árido fueron bautizados por los colonos como Tars y Case
+> Los robots del planeta árido fueron bautizados por los colonos como Tars y Case. (Película "Interestelar")
 >
 >  <img src="Imágenes/Captura de pantalla 2024-04-12 141355.png"/>
 >
 > 
-> Los robots del planeta frondoso como Abbot y Costello
+> Los robots del planeta frondoso como Abbot y Costello (Película "La llegada")
 >
 >  <img src="Imágenes/Captura de pantalla 2024-04-12 141031.png"/>
 >
@@ -142,7 +142,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >
 > ### Flujo de Pantallas
 >
-> El juego cuenta con pantallas de inicio y 2 escenas que corresponden con cada fase.
+> El juego cuenta con 2 pantallas de inicio y 2 escenas que corresponden con cada fase.
 > 
 > 0. ### Pantalla inicio:
 >   
@@ -180,9 +180,10 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >      
 >      <img src="Imágenes/Captura de pantalla 2024-04-12 140852.png"/>
 >
-> * Ambiente: Un paisaje desértico con montañas de arena picudas en el fondo.
+> * Ambiente: Un paisaje desértico con montañas de arena picudas en el fondo.Inspirado en el planeta de los Insectívoros ( Película "El juego de Ender")
 >
 > * Puerto Espacial: El puerto cuenta con un almacén subterráneo metálico. Astro debe descender varios niveles a través de plataformas flotantes y fijas.
+> * Las plataformas no se atraviesan de abajo hacia arriba, ya que éstas se utilizan para situar las trampas justo debajo, por si no se calcula bien el salto o se cae de la plataformas, y así favorecer la pérdida de puntuación.
 >
 > * Objetivo: Astro debe acumular puntos encontrando cajas metalizadas y diamantes dispersos por el almacén.
 >
@@ -203,9 +204,9 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 >       
 >      <img src="Imágenes/Captura de pantalla 2024-04-12 140919.png"/>
 >
-> * Ambiente: Un entorno selvático con una vegetación única que se alimenta de energía, distinta a la de la Tierra. Astro se encuentra en la parte superior del terreno, con árboles de troncos visibles en el fondo.
+> * Ambiente: Un entorno selvático con una vegetación única que se alimenta de energía, distinta a la de la Tierra. Astro se encuentra en la parte superior del terreno, con árboles de troncos visibles en el fondo. Inspirado en la luna de Endor, "planeta" donde viven los Ewoks
 >
-> * Puerto Espacial: La nave está ubicada en la parte derecha del mapa, accesible desde plataformas flotantes.
+> * Puerto Espacial: La nave está ubicada en la parte derecha del mapa, accesible desde plataformas flotantes. Las plataformas no se atraviesan de abajo hacia arriba, ya que éstas se utilizan para situar las trampas justo debajo, por si no se calcula bien el salto o se cae de la plataformas, y así favorecer la pérdida de puntuación.
 >
 > * Sistema de Cuevas: En la parte inferior de la pantalla, hay un complejo sistema de cuevas. Astro debe descender por pozos estrechso con plataformas escalonadas. La vegetación dentro de las cuevas es peligrosa: tocarla resta puntos del Score.
 >
