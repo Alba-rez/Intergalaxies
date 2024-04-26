@@ -16,9 +16,10 @@
 > *	La nave espacial de Astro se encuentra en la escena y actúa como objetivo final del juego.
 > *	La nave despegará una vez que el jugador acumule al menos 500 puntos de combustible.
 > 5.	### **Niveles y Escenas**:
-> *	Escena de Inicio: Presenta tres planetas y una narrativa introductoria con sonidos de fondo de máquinas y typing. 
-> *	Planeta Árido (Escena 1): Trampas de picas, robots disparando rayos láser, y elementos áridos en el diseño del nivel.
-> *	Planeta Frondoso (Escena 2): Trampas de flores venenosas, robots patrullando, y un entorno exuberante con cuevas y vegetación densa.
+> *	Escena de Inicio: Presenta tres planetas y una narrativa introductoria con sonidos de fondo de máquinas y typing.
+> *	Escena How to play : Presenta a los personajes del juego y sus funciones, así como los objetos y su función con los que tendrá que interarctuar Astro, la protagonista.
+> *	Planeta Árido (Escena 2): Trampas de picas, robots disparando rayos láser, y elementos áridos en el diseño del nivel.
+> *	Planeta Frondoso (Escena 3): Trampas de flores venenosas, robots patrullando, y un entorno exuberante con cuevas y vegetación densa.
 > 6.  ### **Controles**:
 > *	Movimiento: Flechas direccionales o teclas WASD.
 > *	Salto: Barra espaciadora.
