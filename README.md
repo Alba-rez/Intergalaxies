@@ -32,4 +32,4 @@
 > 9. ### **Vidas**:
 > 	* El jugador comienza con tres vidas.
 > 	* Pierde una vida si es alcanzado por 1 rayo láser de los robots averiados.
-> 	* Si pierde todas las vidas, la partida se reinicia desde cero manteniéndose en la misma fase.
+> 	* Si pierde todas las vidas, la partida se reinicia desde cero volviendo a la escena 2.
