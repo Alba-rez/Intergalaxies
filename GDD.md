@@ -146,7 +146,7 @@ recursos, evitan trampas y enfrentan desafíos en cada nivel. La atmósfera del 
 > 
 > 0. ### Pantalla inicio:
 >   
->  <img src="Imágenes/escena0.png"/>
+>  <img src="Imágenes/escena 0.png"/>
 >
 > 
 > * Fondo: Una pantalla apaisada con un fondo estelar en movimiento descendente, creando la sensación de desplazamiento. Tres planetas se destacan sobre este fondo: el más cercano es un planeta árido, seguido por uno frondoso, y en la distancia, la Tierra.
