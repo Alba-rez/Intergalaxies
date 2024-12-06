@@ -1,5 +1,5 @@
  ## Resumen del Juego:
-> "Intergalaxies" es un juego de plataformas ambientado en el espacio donde el jugador controla a Astro, una intrépida exploradora espacial. El objetivo del juego es ayudar a Astro a recopilar suficiente combustible para su nave espacial explorando diferentes planetas y evitando trampas y peligros en el camino.
+> "Intergalaxies" es la versión 1.0 de un juego de plataformas ambientado en el espacio donde el jugador controla a Astro, una intrépida exploradora espacial. El objetivo del juego es ayudar a Astro a recopilar suficiente combustible para su nave espacial explorando diferentes planetas y evitando trampas y peligros en el camino.
 > 
 > ## Mecánicas del Juego:
 > 1.	### **Recopilación de Combustible**:
